@@ -1,10 +1,8 @@
+import { Block } from "./block";
+import { TaskBlock } from "./taskblock";
+
 // import { Time } from "@angular/common";
 
-export class WorkBlock {
-
-  constructor(
-    public hour: number,
-    public duration: number,
-    public priority: number
-  ){}
+export class WorkBlock extends Block{
+  task: TaskBlock[];
 }
