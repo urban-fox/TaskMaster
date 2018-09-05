@@ -11,6 +11,18 @@ export abstract class Block {
     this.calculateDuration();
   }
 
+  get start(): Date {
+    return this._start;
+  }
+
+  get end(): Date {
+    return this._end;
+  }
+
+  get duration(): number {
+    return this._duration;
+  }
+
   set end(endDate: Date) {
     this._end = endDate;
     this.calculateDuration();
