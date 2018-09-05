@@ -1,16 +1,6 @@
-<h1>{{title}}</h1>
 
-<h2>{{semester.name}}</h2>
-<h3>Courses:</h3>
+<nav class="navbar navbar-expand-sm navbar-light blue">
+  <span class="navbar-brand">{{title}}</span>
+</nav>
 
-<ul>
-  <li *ngFor="let course of semester.courses">
-    {{course.courseCode}}: {{course.title}}
-    <ul>
-      <li *ngFor="let topic of course.topics">
-        {{topic.title}}: {{topic.startDate.toDateString()}}
-      </li> 
-    </ul>
-  </li> 
-</ul>
-
+<app-home></app-home>
