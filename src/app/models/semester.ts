@@ -9,4 +9,9 @@ export class Semester {
   endDate: Date;
   workBlocks: WorkBlock[];
 
+  constructor(name: string){
+    this.name = name;
+  }
+  
+
 }
